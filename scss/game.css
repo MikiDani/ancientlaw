@@ -1,0 +1,778 @@
+@font-face {
+  font-family: "Sakurata";
+  src: url("../fonts/sakurata.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kashima";
+  src: url("../fonts/kashima.otf") format("opentype");
+}
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Sakurata", sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container-bg {
+  background-image: url("../img/menu/bg-menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+canvas {
+  will-change: auto;
+}
+
+#menu-bg {
+  margin: 0 auto;
+}
+
+.loading-box {
+  font-family: "Sakurata", sans-serif;
+  font-size: 20px;
+  background-image: url("../img/menu/bg-loading.png");
+}
+
+.loading-dots {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  background-image: url("../img/menu/loading.gif");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+#menu-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 280px;
+  width: 45%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(193, 101, 9, 0.6666666667);
+  padding: 20px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  #menu-box {
+    max-width: 330px;
+  }
+  .wepon-span-box {
+    display: inline-block;
+    font-size: 8px;
+  }
+  .key-text {
+    font-size: 10px;
+    color: #edc1a5;
+  }
+}
+@media (min-width: 801px) {
+  #menu-box {
+    max-width: 400px;
+  }
+  .wepon-span-box {
+    display: inline-block;
+    font-size: 11.5px;
+  }
+  .key-text {
+    font-size: 12px;
+    color: #edc1a5;
+  }
+}
+.menu-row {
+  font-family: "Kashima", sans-serif;
+  font-size: 28px;
+  background-color: rgba(244, 146, 49, 0.6666666667);
+  width: 100%;
+  height: 7vh;
+  max-height: 50px;
+  color: black;
+  text-decoration: none;
+}
+.menu-row a {
+  color: black;
+  text-decoration: none;
+}
+.menu-row a:link {
+  color: black;
+}
+.menu-row a:visited {
+  color: black;
+}
+.menu-row a:hover {
+  color: black;
+}
+.menu-row a:active {
+  color: black;
+}
+
+.menu-element {
+  margin-bottom: 7px;
+}
+.menu-element:hover {
+  cursor: pointer;
+  background-color: #e7bb8f !important;
+}
+
+.logo-position {
+  position: absolute;
+  top: 12%;
+  left: 50vw;
+  width: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.tuccmann-logo {
+  display: inline-block;
+  width: 205px;
+  height: 45px;
+  background-image: url("../img/menu/tuccmann-logo.png");
+}
+
+.bg-menu-selector {
+  background-color: #c15909;
+}
+
+.bg-menu-selector-back {
+  background-color: rgba(193, 89, 9, 0.4666666667);
+}
+
+.control-small-width {
+  width: 100px !important;
+}
+
+.invisible-pointer {
+  pointer-events: none;
+}
+
+#scroll-info-box-top {
+  background-image: url("../img/menu/info-scroll-top-pix.png");
+  width: 750px;
+  height: 69px;
+}
+
+#scroll-info-box-content {
+  background-image: url("../img/menu/info-scroll-bg-pix.png");
+  background-repeat: repeat-y;
+  width: 750px;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+}
+
+#scroll-info-box-bottom {
+  background-image: url("../img/menu/info-scroll-bottom-pix.png");
+  width: 750px;
+  height: 69px;
+}
+
+.info-key1-container {
+  width: 128px;
+  height: 56px;
+  background-image: url("../img/objects/keys/cellar-key1.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.info-key2-container {
+  width: 128px;
+  height: 56px;
+  background-image: url("../img/objects/keys/cellar-key2.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#scroll-button {
+  background-image: url("../img/menu/bg-button.png");
+  width: 142px;
+  height: 62px;
+  border: none;
+  color: #111010;
+  font-family: "Sakurata", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 12px;
+}
+
+#speed-container {
+  background-image: url("../img/menu/hud/speed-text.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 40px;
+  height: 64px;
+}
+
+#val4 {
+  position: absolute;
+  background-image: url("../img/menu/hud/speed-g-4-f.png");
+  background-size: cover;
+  width: 9px;
+  height: 17px;
+  right: 0px;
+  top: 0px;
+}
+
+.val4-on {
+  background-image: url("../img/menu/hud/speed-g-4.png") !important;
+}
+
+#val3 {
+  position: absolute;
+  background-image: url("../img/menu/hud/speed-g-3-f.png");
+  background-size: cover;
+  width: 9px;
+  height: 16px;
+  right: 0px;
+  top: 17px;
+}
+
+.val3-on {
+  background-image: url("../img/menu/hud/speed-g-3.png") !important;
+}
+
+#val2 {
+  position: absolute;
+  background-image: url("../img/menu/hud/speed-g-2-f.png");
+  background-size: cover;
+  width: 9px;
+  height: 15px;
+  right: 0px;
+  top: 33px;
+}
+
+.val2-on {
+  background-image: url("../img/menu/hud/speed-g-2.png") !important;
+}
+
+#val1 {
+  position: absolute;
+  background-image: url("../img/menu/hud/speed-g-1-f.png");
+  background-size: cover;
+  width: 9px;
+  height: 16px;
+  right: 0px;
+  top: 48px;
+}
+
+.val1-on {
+  background-image: url("../img/menu/hud/speed-g-1.png") !important;
+}
+
+#healt-percentage {
+  display: absolute;
+  width: 180px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: "Sakurata";
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  font-weight: bold;
+  color: white;
+}
+
+#coin-gold {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: 180px;
+  background-image: url("../img/menu/hud/coin-gold.png");
+}
+
+#coin-gold-text {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+  top: 2px;
+  right: 0px;
+  color: #ffba30;
+  font-family: "Sakurata", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 4px;
+}
+
+#coin-silver {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  top: 22px;
+  left: 180px;
+  background-image: url("../img/menu/hud/coin-silver.png");
+}
+
+#coin-silver-text {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+  top: 22px;
+  right: 0px;
+  color: #8891b0;
+  font-family: "Sakurata", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 4px;
+}
+
+#coin-copper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  bottom: 2px;
+  left: 180px;
+  background-image: url("../img/menu/hud/coin-copper.png");
+}
+
+#coin-copper-text {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50px;
+  height: 20px;
+  bottom: 2px;
+  right: 0px;
+  color: #f3a845;
+  font-family: "Sakurata", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 4px;
+}
+
+#gold-key {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 32px;
+  top: 0px;
+  left: 0px;
+}
+
+.gold-key-on {
+  background-image: url("../img/menu/hud/gold-key.png");
+}
+
+#silver-key {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 32px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.silver-key-on {
+  background-image: url("../img/menu/hud/silver-key.png");
+}
+
+#ammo-star-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 32px;
+  top: 0px;
+  left: 48px;
+  color: #111010;
+  font-family: "Sakurata", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#ammo-fire-text {
+  position: absolute;
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  bottom: 0px;
+  left: 48px;
+  color: #111010;
+  font-family: "Sakurata", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#ammo-star {
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  top: 0px;
+  left: 96px;
+  background-image: url("../img/menu/hud/ammo-star.png");
+}
+
+#ammo-fire {
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  bottom: 0px;
+  left: 96px;
+  background-image: url("../img/menu/hud/ammo-fire.png");
+}
+
+#weapon1 {
+  position: absolute;
+  display: inline-block;
+  width: 91px;
+  height: 32px;
+  top: 0px;
+  left: 128px;
+  background-image: url("../img/menu/hud/bg-weapon1.png");
+}
+
+#weapon2 {
+  position: absolute;
+  display: inline-block;
+  width: 204px;
+  height: 32px;
+  top: 32px;
+  left: 128px;
+  background-image: url("../img/menu/hud/bg-weapon2_off.png");
+}
+
+.weapon2-on {
+  background-image: url("../img/menu/hud/bg-weapon2_on.png") !important;
+}
+
+#weapon3 {
+  position: absolute;
+  display: inline-block;
+  width: 46px;
+  height: 64px;
+  top: 0px;
+  right: 0px;
+  background-image: url("../img/menu/hud/bg-weapon3_off.png");
+}
+
+.weapon3-on {
+  background-image: url("../img/menu/hud/bg-weapon3_on.png") !important;
+}
+
+#weapon4 {
+  position: absolute;
+  display: inline-block;
+  width: 113px;
+  height: 32px;
+  top: 0px;
+  right: 46px;
+  background-image: url("../img/menu/hud/bg-weapon4_off.png");
+}
+
+.weapon4-on {
+  background-image: url("../img/menu/hud/bg-weapon4_on.png") !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #434343;
+    margin-top: -1px;
+  }
+  input[type=range] {
+    overflow: hidden;
+    width: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #9a905d;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #ada579;
+  }
+}
+.select-class {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #f0d250;
+  text-shadow: 2px 3px 4px rgb(94, 94, 94);
+  background-image: none !important;
+  text-align: right !important;
+}
+
+input[type=range]::-moz-range-progress {
+  background-color: #ada579;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #ada579;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: #ada579;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: #ada579;
+}
+
+input[type=range] {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: none;
+  box-shadow: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+.diagram-icon {
+  width: 35px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.precentage-color {
+  display: inline-block;
+  min-width: 100px;
+  color: #4a72ad;
+  color: rgba(255, 255, 255, 0.6666666667);
+  text-align: right;
+}
+
+.story-tittle {
+  font-family: "Kashima";
+}
+
+.story-pic1, .story-pic2 {
+  width: 200px;
+}
+
+.story-pic1 {
+  position: relative;
+  top: -46px;
+  float: right;
+}
+
+.story-pic2 {
+  float: left;
+}
+
+.story-pic3 {
+  float: right;
+}
+
+.story-pic4 {
+  float: left;
+}
+
+.story-pic5 {
+  float: right;
+}
+
+.mobil-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-color: rgba(128, 128, 128, 0.431372549);
+  text-align: center;
+  width: 7vw;
+  height: 7vw;
+}
+
+.mobil-up {
+  background-image: url("../img/menu/arrows/up.svg");
+}
+
+.mobil-down {
+  background-image: url("../img/menu/arrows/down.svg");
+}
+
+.mobil-left {
+  background-image: url("../img/menu/arrows/left.svg");
+}
+
+.mobil-right {
+  background-image: url("../img/menu/arrows/right.svg");
+}
+
+.mobil-slowLeft {
+  background-image: url("../img/menu/arrows/slowleft.svg");
+}
+
+.mobil-slowRight {
+  background-image: url("../img/menu/arrows/slowright.svg");
+}
+
+.mobil-strafeLeft {
+  background-image: url("../img/menu/arrows/strafeleft.svg");
+}
+
+.mobil-strafeRight {
+  background-image: url("../img/menu/arrows/straferight.svg");
+}
+
+.mobil-fire {
+  background-image: url("../img/menu/arrows/fire.svg");
+}
+
+.mobil-open {
+  background-image: url("../img/menu/arrows/open.svg");
+}
+
+.mobil-exit {
+  background-image: url("../img/menu/arrows/exit.svg");
+}
+
+.mobil-map {
+  background-image: url("../img/menu/arrows/map.svg");
+}
+
+.mobil-none {
+  margin: 0;
+  background-color: transparent !important;
+}
+
+.text-color-green {
+  color: green !important;
+  background-color: deeppink !important;
+  border: 2px solid red;
+}
+
+#menu-information-div label {
+  font-family: "Kashima";
+  src: url("../fonts/kashima.otf") format("opentype");
+  font-size: 28px;
+  color: black;
+}
+#menu-information-div .info-keyboard {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+#menu-information-div a {
+  color: #edc1a5;
+}
+#menu-information-div a:hover {
+  color: gold;
+}
+#menu-information-div .tuccmann-color {
+  color: #00907c;
+}
+
+.menu-info-text {
+  font-size: 18px;
+}
+
+.color-box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.color-box.purple {
+  background-color: #cd97de;
+}
+.color-box.blue {
+  background-color: #61bfdd;
+}
+.color-box.deepblue {
+  background-color: #5b67b5;
+}
+.color-box.yellow {
+  background-color: #f1e64a;
+}
+.color-box.orange {
+  background-color: #f9a21f;
+}
+.color-box.red {
+  background-color: #ff4d55;
+}
+.color-box.green {
+  background-color: #5dcf7d;
+}
+
+.text-start {
+  font-size: 18px;
+}
+
+.text-start-arrow {
+  font-size: 18px;
+  line-height: 12px;
+  text-align: left;
+}
+
+.text-start-links {
+  font-size: 18px;
+  line-height: auto;
+}
+
+.title-width {
+  display: inline-block;
+  min-width: 120px;
+}/*# sourceMappingURL=game.css.map */

@@ -1,0 +1,434 @@
+[
+    {
+        "id": 5,
+        "textures": {
+            "cellar": ["wall1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 6,
+        "textures": {
+            "cellar": ["hwall1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "big"
+    },
+    {
+        "id": 8,
+        "textures": {
+            "cellar": ["hwall1-d"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "big"
+    },
+    {
+        "id": 10,
+        "textures": {
+            "cellar": ["wall1-c1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 15,
+        "textures": {
+            "cellar": ["wall1-t1", "wall1-t2", "wall1-t3", "wall1-t4"]
+        },
+        "type": "wall",
+        "mode": "animated",
+        "height": "normal",
+        "anim_switch": true,
+        "anim_repeat": true,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 40,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80
+    },
+    {
+        "id": 20,
+        "textures": {
+            "cellar": ["door1", "door1-a1", "door1-a2"]
+        },
+        "type": "wall",
+        "mode": "door",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "secret2"
+    },
+    {
+        "id": 23,
+        "textures": {
+            "cellar": ["hdoor1", "hdoor1-a1", "hdoor1-a2"]
+        },
+        "type": "wall",
+        "mode": "door",
+        "height": "big",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "secret2"
+    },   
+    {
+        "id": 25,
+        "textures": {
+            "cellar": ["door1-key2-big", "door1-key2-a1-big", "door1-key2-a2-big"]
+        },
+        "type": "wall",
+        "mode": "key1",
+        "height": "big",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "door-key1"
+    },
+    {
+        "id": 27,
+        "textures": {
+            "cellar": ["door1-key1-big", "door1-key1-a1-big", "door1-key1-a2-big"]
+        },
+        "type": "wall",
+        "mode": "key2",
+        "height": "big",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "door-key2"
+    },
+    {
+        "id": 29,
+        "textures": {
+            "cellar": ["door1-key1", "door1-key1-a1", "door1-key1-a2"]
+        },
+        "type": "wall",
+        "mode": "key1",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "door-key1"
+    },
+    {
+        "id": 30,
+        "textures": {
+            "cellar": ["door1-key2", "door1-key2-a1", "door1-key2-a2"]
+        },
+        "type": "wall",
+        "mode": "key2",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "door-key2"
+    },
+    {
+        "id": 35,
+        "textures": {
+            "cellar": ["wall1-h1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 40,
+        "textures": {
+            "cellar": ["wall1-secret", "wall1-secret-a1", "wall1-secret-a2"]
+        },
+        "type": "wall",
+        "mode": "secret",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 18,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80,
+        "sound": "secret1"
+    },
+    {
+        "id": 45,
+        "textures": {
+            "cellar": ["wall-exit"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 100,
+        "textures": {
+            "garden": ["wall1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 105,
+        "textures": {
+            "garden": ["hwall1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "big"
+    },
+    {
+        "id": 110,
+        "textures": {
+            "garden": ["hwall1-f1", "hwall1-f2", "hwall1-f3", "hwall1-end"]
+        },
+        "type": "creature",
+        "mode": "animated",
+        "height": "big",
+        "damage": 1,
+        "energy": 3,
+        "anim_switch": true,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 200
+    },
+    {
+        "id": 150,
+        "textures": {
+            "cellar": ["wall2"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 152,
+        "textures": {
+            "cellar": ["hwall2"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "big"
+    },
+    {
+        "id": 153,
+        "textures": {
+            "cellar": ["hwall2-d"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "big"
+    },
+    {
+        "id": 154,
+        "textures": {
+            "cellar": ["hdoor2", "hdoor2-a1", "hdoor2-a2"]
+        },
+        "type": "wall",
+        "mode": "door",
+        "height": "big",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 9,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+        "sound": "secret2"
+    },
+    {
+        "id": 155,
+        "textures": {
+            "cellar": ["wall2-t1", "wall2-t2", "wall2-t3", "wall2-t4"]
+        },
+        "type": "wall",
+        "mode": "animated",
+        "height": "normal",
+        "anim_switch": true,
+        "anim_repeat": true,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 40,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80
+    },
+    {
+        "id": 160,
+        "textures": {
+            "cellar": ["wall2-secret", "wall2-secret-a1", "wall2-secret-a2"]
+        },
+        "type": "wall",
+        "mode": "secret",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 18,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80,
+        "sound": "secret1"
+    },
+    {
+        "id": 170,
+        "textures": {
+            "cellar": ["wall2-p"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 200,
+        "textures": {
+            "castle": ["wall1"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 205,
+        "textures": {
+            "castle": ["wall1-p"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 206,
+        "textures": {
+            "castle": ["wall1-i"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 210,
+        "textures": {
+            "castle": ["wall2"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 215,
+        "textures": {
+            "castle": ["wall2-p"]
+        },
+        "type": "wall",
+        "mode": "normal",
+        "height": "normal"
+    },
+    {
+        "id": 220,
+        "textures": {
+            "castle": ["wall1-secret", "wall1-secret-a1", "wall1-secret-a2"]
+        },
+        "type": "wall",
+        "mode": "secret",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 18,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80,
+        "sound": "secret1"
+    },
+    {
+        "id": 225,
+        "textures": {
+            "castle": ["wall2-secret", "wall2-secret-a1", "wall2-secret-a2"]
+        },
+        "type": "wall",
+        "mode": "secret",
+        "height": "normal",
+        "active": true,
+        "anim_switch": false,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 18,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80,
+        "sound": "secret2"
+    },
+    {
+        "id": 230,
+        "textures": {
+            "garden": ["wall-portal-a1", "wall-portal-a2", "wall-portal-a3"]
+        },
+        "type": "wall",
+        "mode": "animated",
+        "portal": true,
+        "height": "big",
+        "anim_switch": true,
+        "anim_repeat": true,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 40,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 80
+    },
+    {
+        "id": 250,
+        "textures": {
+            "egg": ["egg-b1", "egg-b2"]
+        },
+        "type": "wall",
+        "mode": "animated",
+        "portal": true,
+        "height": "big",
+        "anim_switch": true,
+        "anim_repeat": true,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 40,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 680
+    }
+]

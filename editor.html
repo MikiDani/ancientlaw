@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./scss/editor.css">
+	<link rel="stylesheet" href="./modules/bootstrap/bootstrap.min.css">    
+	<link rel="shortcut icon" href="./favicon-editor.ico" type="image/x-icon">
+	<title>The Acient Law - Map Editor</title>
+</head>
+<body class="bg-dark p-0 m-0 overflow-hidden">
+	<div class="container-fluid h-100 p-0 m-0">
+		<input type="hidden" name="mapdata" value="loremdata">
+		<div class="row h-75 p-0 m-0">
+			<div class="col-lg-8 p-3 m-0 map-container">
+			</div>
+			<div class="col-lg-4 p-0 m-0 tools-container">
+				<div class="row tools-title m-3">
+					<div class="d-flex justify-content-between align-items-center p-0 m-0 mt-2">
+						<button type="button" id="options-button" class="btn btn-sm btn-minw1 obg-warning" data-bs-toggle="modal" data-bs-target="#info-modal">Informations</button>
+						<button type="button" id="save-button" class="btn btn-sm btn-minw1 obg-danger text-white">Save</button>
+					</div>
+					<div id="filename-message" class="p-0 m-0 mt-2"></div>
+					<div id="map-selector" class="my-2">
+						<!-- javascript generated -->
+					</div>
+					<div class="px-3 py-0">
+						<input type="text" name="filename" value="map2" placeholder="filename.json" class="form-control my-3" style="display:none;">
+					</div>
+				</div>
+				<div class="mx-3 my-0 d-flex justify-content-between align-items-center">
+					<button id="map-icon-size-button" class="btn btn-sm btn-minw1 obg-primary" data-size="big">Small Icons</button>
+					<button id="fill-border-button" class="btn btn-sm btn-minw1 obg-warning">Fill Border</button>
+					<button id="delete-all-button" class="btn btn-sm btn-minw1 obg-danger text-white">Delete All</button>
+				</div>
+				<div id="creatures-data-plus" class="row tools-title p-0 m-3 p-1 mb-0">
+					<div class="row p-0 m-0 mt-1 d-flex align-items-center justify-content-center">
+						<h6 class="mb-3">GLOBAL CREATURE SETTINGS</h6>
+						<div class="col-3 mb-1 p-0 m-0 text-white text-center text-small-2">plus energy:</div>
+						<div class="col-3 mb-1 p-0 m-0"><input type="number" class="form-control form-control-sm" name="plus-energy" value="0"></div>
+						<div class="col-3 mb-1 p-0 m-0 text-white text-center text-small-2">plus damage:</div>
+						<div class="col-3 mb-1 p-0 m-0"><input type="number" class="form-control form-control-sm" name="plus-damage" value="0"></div>
+						<div class="col-3 mb-1 p-0 m-0 text-white text-center text-small-2">plus speed:</div>
+						<div class="col-3 mb-1 p-0 m-0"><input type="number" class="form-control form-control-sm" name="plus-speed" value="0"></div>
+						<div class="col-3 mb-1 p-0 m-0 text-white text-center text-small-2">plus anim_speed:</div>
+						<div class="col-3 mb-1 p-0 m-0"><input type="number" class="form-control form-control-sm" name="plus-animspeed" value="0"></div>
+					</div>
+				</div>
+				<div id="textures-selected" class="row p-3 m-0">
+					<!-- javascript generated -->
+				</div>
+				<div id="textures-list" class="row p-0 m-0 mb-0 mx-3">
+					<!-- javascript generated -->
+				</div>
+				<div class="row tools-title m-3 p-3 pt-0 text-center">
+					<h5>SHADOW</h5>
+					<div class="d-flex justify-content-between align-items-center">
+						<span>- Dark</span>
+						<span>160 Basic</span>
+						<span>200 Normal</span>
+						<span>+ Light</span>
+					</div>
+					<input id="shadow-input" type="range" min="100" max="600" step="10" value="160">
+					<span id="shadow-input-value">160</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="info-modal" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5 text-center w-100"><b>Editor Information</b></h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-information">
+					<span>On the right side, you can select different elements like walls, doors, secrets, blocks, objects, creatures, etc.</span><br>
+					<span>When you click on one, it will take you to the details of the selected element.</span><br>
+					<span>Here, you can modify the element's parameters if needed. By default, the standard settings will always appear (angle, material, text, etc.).</span><br>
+					<span>After adjusting the parameters to your liking, the element will be "carried" by the mouse, ready to be placed.</span><br>
+					<span>You can place the selected element on the map with the left mouse button and delete the content of the square under the mouse with the right mouse button.</span><br>
+					<span>Until you click on a different element, it will continue placing the current element with the chosen settings.</span><br>
+					<span>If you select a new element, the previous settings will be lost!</span><br><br>
+					<span>If a wall appears with a gray outline on the map, it means it's a high wall.</span><br>
+					<span>If it appears with a white outline, it's a secret wall that can be opened.</span><br><br>					 
+					<span><b>Small/Big Icons buttons:</b>: Changes the size of the icons displayed on the map.</span><br>
+					<span><b>Fill Border button</b>: This fills the edges of the entire map with the selected wall element. It's a helpful tool, but optional.</span><br>
+					<span><b>Delete All button</b>: Deletes all elements from the map. Use this if you want to start fresh with a new map.</span><br>
+					<span><b>Save button</b>: Saves any changes to the map immediately, without asking for confirmation.</span><br><br>
+					<span>At the top, there are four input fields: "plus energy", "plus damage", "plus speed", and "plus anim_speed".</span><br>
+					<span>These help when placing enemies by automatically adding the values you enter to the character's base stats.</span><br><br>
+					<span>You can adjust the shadow size between 100 and 600. The higher the value, the lighter the shadow will be.</span><br><br>
+					<span>To make sure the map works correctly, place at least one object before testing it.</span><br>
+					<span>If the walls don't fully enclose the area and run into infinity, the game will malfunction. Don't leave gaps in the walls!</span><br><br>
+					<span>Blocks must have walls on both sides, otherwise, the textures will display incorrectly in the game.</span><br>
+					<span>It's also important to pay attention to the angle of the blocks (0, 90 degrees).</span><br>
+					<span>If you don't place an exit, the map will still load, but you won't be able to leave the level.</span><br><br>
+					<span>You will need to clear the cache frequently while testing the maps. I recommend this extension, which quickly handles the process:</span>
+					<a href="https://chromewebstore.google.com/detail/clear-cache-shortcut/jnajhcakejgchhbjlchkfmdidgjefleg" target="_blank">clear-cache-shortcut</a>
+					<div class="p-0 m-0 text-center">
+						<h6><b>Have fun creating your map! &#9786;</b></h6>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./modules/jquery/jquery.min.js"></script>
+	<script src="./modules/bootstrap/bootstrap.bundle.min.js"></script>
+	<script type="module" src="./js/editor.js"></script>
+</body>
+</html>

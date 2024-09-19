@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="-94 -4 800 800"
+   enable-background="new -94 -4 800 800"
+   xml:space="preserve"
+   sodipodi:docname="map.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:serif="http://www.serif.com/"><defs
+   id="defs72" /><sodipodi:namedview
+   id="namedview70"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.04625"
+   inkscape:cx="247.55078"
+   inkscape:cy="400.4779"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   inkscape:window-x="1592"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+
+<g
+   id="g190"
+   transform="matrix(1.3077298,0,0,1.3077298,28.276808,-117.8296)">
+	<g
+   id="g188"
+   style="fill:#008400;fill-opacity:1">
+		<g
+   id="Icons1_8_"
+   serif:id="Icons"
+   style="fill:#008400;fill-opacity:1">
+			<g
+   id="check-selected_8_"
+   style="fill:#008400;fill-opacity:1">
+				<g
+   transform="matrix(0.10009,0,0,0.10009,511.942,319.993)"
+   id="g180"
+   style="fill:#008400;fill-opacity:1">
+					<path
+   fill="#4dbc06"
+   d="m -2984.6,2716.9 c 531.3,-5.1 1057.4,-225 1435.7,-598.5 449.3,-443.5 680.6,-1099.9 600,-1726.5 -138.3,-1073.7 -1021.7,-1802.3 -2048.8,-1802.3 -780.4,0 -1538.8,487.7 -1871.4,1194.9 -254.7,541.5 -255.1,1195.1 0,1737.5 330.3,702.2 1076.3,1187.4 1858.1,1194.9 8.7,0 17.6,0 26.4,0 z m -24.2,-343.9 c -793.6,-7.6 -1534.1,-620.8 -1681.3,-1407 -103.9,-554.3 92.1,-1154.1 500.2,-1547.7 476.6,-459.6 1225.6,-613.6 1848.3,-353.1 557.3,233.2 974.3,774.3 1051.2,1370.7 65.9,511.1 -117.7,1046.7 -478.5,1415.7 -316.4,323.7 -760.2,516.9 -1217.9,521.3 -7.3,0.1 -14.7,0.1 -22,0.1 z"
+   id="path178"
+   style="fill:#008400;fill-opacity:1" />
+				</g>
+				<g
+   transform="matrix(1.20036,0,0,1.20036,-108.995,-70.5272)"
+   id="g184"
+   style="fill:#008400;fill-opacity:1">
+					<path
+   fill="#4dbc06"
+   d="M 267.3,501.2"
+   id="path182"
+   style="fill:#008400;fill-opacity:1" />
+				</g>
+			</g>
+		</g>
+	</g>
+</g><text
+   fill="#4dbc06"
+   font-family="Ninjastrike"
+   font-size="414.067px"
+   id="text192"
+   x="162.50427"
+   y="536.15668"
+   style="stroke-width:1.30773;fill:#008400;fill-opacity:1">M</text></svg>

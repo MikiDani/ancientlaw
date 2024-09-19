@@ -1,0 +1,57 @@
+[
+    {
+        "textures": {
+            "direction-0": ["direction-0"]
+        },
+        "id": 2000,
+        "active": true,
+        "type": "effect",
+        "mode": "direction",
+        "material": "ghost",
+        "angle": 0
+    },
+    {
+        "textures": {
+            "direction-90": ["direction-90"]
+        },
+        "id": 2005,
+        "active": true,
+        "type": "effect",
+        "mode": "direction",
+        "material": "ghost",
+        "angle": 90
+    },
+    {
+        "textures": {
+            "direction-180": ["direction-180"]
+        },
+        "id": 2010,
+        "active": true,
+        "type": "effect",
+        "mode": "direction",
+        "material": "ghost",
+        "angle": 180
+    },
+    {
+        "textures": {
+            "direction-270": ["direction-270"]
+        },
+        "id": 2015,
+        "active": true,
+        "type": "effect",
+        "mode": "direction",
+        "material": "ghost",
+        "angle": 270
+    },
+    {
+        "textures": {
+            "direction-exit": ["direction-exit"]
+        },
+        "id": 2020,
+        "active": true,
+        "type": "effect",
+        "mode": "exit",
+        "material": "ghost",
+        "angle": 0
+    }
+]

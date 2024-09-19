@@ -1,0 +1,30 @@
+[
+    {
+        "type": "floor",
+        "textures": {
+            "floors1": ["floor1"]
+        },
+        "color": "#299731"
+    },
+    {
+        "type": "floor",
+        "textures": {
+            "floors1": ["floor2"]
+        },
+        "color": "#5c5c5c"
+    },
+    {
+        "type": "floor",
+        "textures": {
+            "floors1": ["floor3"]
+        },
+        "color": "#1e2871"
+    },
+    {
+        "type": "floor",
+        "textures": {
+            "floors1": ["floor4"]
+        },
+        "color": "#e8e4bb"
+    }
+]

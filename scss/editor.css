@@ -1,0 +1,249 @@
+.obg-primary {
+  background-color: #efb13e !important;
+}
+
+.obg-secondary {
+  background-color: #efb13e !important;
+}
+
+.obg-danger {
+  background-color: #ff5e00 !important;
+}
+
+.obg-warning {
+  background-color: #ffb732 !important;
+}
+
+.obg-success {
+  background-color: #19c213 !important;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.container-box {
+  display: block;
+  width: 100vw;
+  border: thick double #828282;
+  overflow-x: hidden;
+}
+
+.map-container {
+  display: inline-block;
+  width: 80%;
+  height: calc(100vh - 0px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 0;
+  overflow: auto;
+}
+
+.tools-container {
+  display: inline-block;
+  height: calc(100vh - 0px);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.tools-title {
+  margin: 0;
+  padding: 0;
+  border: 2mm ridge #996f20;
+  background-color: #313131;
+  color: lightgray;
+  text-align: center;
+}
+
+.menu-link {
+  display: inline !important;
+  text-decoration: none;
+  color: lightgray;
+  letter-spacing: 2px;
+}
+.menu-link:hover {
+  letter-spacing: 1.5px;
+  color: #ebce0d;
+  font-weight: bold;
+}
+
+.button-bg-none {
+  background-color: transparent;
+  border: none;
+}
+
+.brick {
+  width: 100%;
+  display: inline-block;
+  background-color: #0a0a0a;
+  background-image: cover !important;
+  border: 1px solid #141414;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0;
+  letter-spacing: 0;
+}
+
+.map-row {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-minw1 {
+  width: 100%;
+  min-width: 60px;
+  margin: 2px;
+}
+
+.text-small {
+  font-size: 1rem;
+}
+
+.text-small-2 {
+  font-size: 0.7rem;
+}
+
+.data-line > div {
+  min-height: 40px;
+}
+
+.list-pic-player {
+  width: 48px;
+}
+.list-pic-player:hover {
+  cursor: pointer;
+}
+
+.list-pic-direction {
+  width: 48px;
+}
+.list-pic-direction:hover {
+  cursor: pointer;
+}
+
+.list-pic-wall {
+  width: 48px;
+}
+.list-pic-wall:hover {
+  cursor: pointer;
+}
+
+.list-pic-block {
+  width: 48px;
+}
+.list-pic-block:hover {
+  cursor: pointer;
+}
+
+.list-pic-object {
+  width: 48px;
+}
+.list-pic-object:hover {
+  cursor: pointer;
+}
+
+.list-pic-creature {
+  width: 48px;
+}
+.list-pic-creature:hover {
+  cursor: pointer;
+}
+
+.list-pic-sky {
+  width: 129.6px;
+}
+.list-pic-sky:hover {
+  cursor: pointer;
+}
+
+.list-pic-ceiling, .list-pic-floor {
+  width: 129.6px;
+  height: 19px;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+.selected-pic {
+  width: 92;
+}
+.selected-pic:hover {
+  cursor: pointer;
+}
+
+.block-90-borders {
+  border-top: 5px solid olive !important;
+  border-bottom: 5px solid olive !important;
+}
+
+.block-0-borders {
+  border-left: 5px solid olive !important;
+  border-right: 5px solid olive !important;
+}
+
+.block-90-borders2 {
+  background-color: olive;
+  margin-top: 5px solid #b8b800 !important;
+  margin-bottom: 5px solid olive !important;
+  padding-top: 5px solid #b8b800 !important;
+  padding-bottom: 5px solid olive !important;
+  background-color: deeppink !important;
+}
+
+.block-0-borders2 {
+  background-color: olive;
+  margin-left: 5px solid #b8b800 !important;
+  margin-right: 5px solid olive !important;
+  padding-top: 5px solid #b8b800 !important;
+  padding-bottom: 5px solid olive !important;
+  background-color: deeppink !important;
+}
+
+.bg-disabled {
+  background-color: #b8b8b8 !important;
+  border-color: gray !important;
+}
+
+.white-border {
+  border: 3px solid white !important;
+}
+
+#map-selector {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+}
+
+#map-selector .form-check {
+  text-align: center;
+}
+
+.music-selector {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+  margin-bottom: 10px;
+}
+
+.music-selector .form-check {
+  text-align: center;
+}
+
+.text-information {
+  font-size: 0.9rem;
+}
+
+.filename-message {
+  min-height: 30px;
+}/*# sourceMappingURL=editor.css.map */

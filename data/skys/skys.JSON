@@ -1,0 +1,24 @@
+[
+    {
+        "type": "sky",
+        "textures": {
+            "skys1": ["sky1"]
+        },
+        "color": "#afc1b3",
+        "clouds": true
+    },
+    {
+        "type": "sky",
+        "textures": {
+            "skys1": ["sky2"]
+        },
+        "color": "#1c1f12"
+    },
+    {
+        "type": "ceiling",
+        "textures": {
+            "ceilings1": ["ceiling1"]
+        },
+        "color": "#656565"
+    }
+]

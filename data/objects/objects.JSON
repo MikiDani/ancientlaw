@@ -1,0 +1,343 @@
+[
+	{
+		"id": 1000,
+		"textures": {
+			"plant": ["plant1"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "fix",
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1005,
+		"textures": {
+			"coins": ["coin1"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "coin1",
+		"material": "ghost",
+		"value": 1,
+		"z": 0,
+		"angle": 0,
+		"sound": "coin1"
+	},
+	{
+		"id": 1010,
+		"textures": {
+			"coins": ["coin2"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "coin2",
+		"material": "ghost",
+		"value": 1,
+		"z": 0,
+		"angle": 0,
+		"sound": "coin2"
+	},
+	{
+		"id": 1015,
+		"textures": {
+			"coins": ["coin3"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "coin3",
+		"material": "ghost",
+		"value": 1,
+		"z": 0,
+		"angle": 0,
+		"sound": "coin3"
+	},
+	{
+		"id": 1020,
+		"textures": {
+			"cellar": ["cuffs"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "ghost",
+		"z": 10,
+		"angle": 0
+	},
+	{
+		"id": 1025,
+		"textures": {
+			"cellar": ["bones"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "ghost",
+		"z": -5,
+		"angle": 0
+	},
+	{
+		"id": 1030,
+		"textures": {
+			"cellar": ["barell"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "fix",
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1032,
+		"textures": {
+			"cellar": ["torch-a1", "torch-a2", "torch-a3", "torch-a4"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "fix",
+		"anim_switch": true,
+		"anim_startFrame": 1,
+		"anim_actFrame": 1,
+		"anim_speed": 100,
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1035,
+		"textures": {
+			"keys": ["cellar-key1"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "key1",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "get-key"
+	},
+	{
+		"id": 1040,
+		"textures": {
+			"keys": ["cellar-key2"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "key2",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "get-key"
+	},
+	{
+		"id": 1045,
+		"textures": {
+			"scrolls": ["scroll-turq"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "message",
+		"time": 3000,
+		"message": "Message. For time.",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "magic1"
+	},
+	{
+		"id": 1050,
+		"textures": {
+			"scrolls": ["scroll-blue"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "message",
+		"time": 0,
+		"message": "Message. Button press.",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1055,
+		"textures": {
+			"mushroom": ["mushroom-a1", "mushroom-a2", "mushroom-a3", "mushroom-a4"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "mushroom",
+		"material": "ghost",
+		"anim_switch": true,
+		"anim_startFrame": 1,
+		"anim_actFrame": 1,
+		"anim_speed": 200,
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1060,
+		"textures": {
+			"health": ["healt10-a1", "healt10-a2", "healt10-a3"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "energy",
+		"material": "ghost",
+		"value": 10,
+		"anim_switch": true,
+		"anim_startFrame": 1,
+		"anim_actFrame": 1,
+		"anim_speed": 300,
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1065,
+		"textures": {
+			"health": ["healt25-a1", "healt25-a2", "healt25-a3"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "energy",
+		"material": "ghost",
+		"value": 25,
+		"anim_switch": true,
+		"anim_startFrame": 1,
+		"anim_actFrame": 1,
+		"anim_speed": 300,
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1070,
+		"textures": {
+			"speed": ["speed-a1", "speed-a2", "speed-a3", "speed-a4"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "speed",
+		"material": "ghost",
+		"anim_switch": true,
+		"anim_startFrame": 1,
+		"anim_actFrame": 1,
+		"anim_speed": 80,
+		"z": 0,
+		"angle": 0,
+		"sound": "speed"
+	},
+	{
+		"id": 1100,
+		"textures": {
+			"map": ["map"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "map",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "magic2"
+	},
+	{
+		"id": 1110,
+		"textures": {
+			"weapons": ["weapon2-picup"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "weapon2",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "player-glad2"
+	},
+	{
+		"id": 1120,
+		"textures": {
+			"weapons": ["weapon3-picup"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "weapon3",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "player-glad2"
+	},
+	{
+		"id": 1130,
+		"textures": {
+			"weapons": ["weapon4-picup"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "weapon4",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "player-glad1"
+	},
+	{
+		"id": 1135,
+		"textures": {
+			"weapons": ["weapon4-ammo"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "weapon4ammo",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0,
+		"sound": "weapon4-ammo"
+	},
+	{
+		"id": 1140,
+		"textures": {
+			"well": ["well"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "fix",
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1150,
+		"textures": {
+			"grass": ["grass1"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "ghost",
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1155,
+		"textures": {
+			"tree": ["tree1"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "fix",
+		"z": 0,
+		"angle": 0
+	},
+	{
+		"id": 1160,
+		"textures": {
+			"table": ["table1"]
+		},
+		"active": true,
+		"type": "object",
+		"mode": "normal",
+		"material": "fix",
+		"z": 0,
+		"angle": 0
+	}
+]

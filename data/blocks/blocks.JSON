@@ -1,0 +1,200 @@
+[
+	{
+		"id": 500,
+		"textures": {
+			"block1": ["block1"]
+		},
+		"active": true,
+		"type": "block",
+		"mode": "normal",
+		"material": "fix",
+		"angle": 0
+	},
+	{
+		"id": 505,
+		"textures": {
+			"block2": ["block2"]
+		},
+		"active": true,
+		"type": "block",
+		"mode": "normal",
+		"material": "fix",
+		"angle": 90
+	},
+	{
+        "id": 510,
+        "textures": {
+            "door1": ["block-door1", "block-door1-a1", "block-door1-a2"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "door",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door1"
+    },
+	{
+        "id": 515,
+        "textures": {
+            "door_key1": ["block-door-key1", "block-door-key1-a1", "block-door-key1-a2"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "key1",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door-key1"
+    },
+	{
+        "id": 517,
+        "textures": {
+            "door_key2": ["block-door-key2", "block-door-key2-a1", "block-door-key2-a2"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "key2",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door-key2"
+    },
+    {
+		"id": 520,
+		"textures": {
+			"block3": ["block3"]
+		},
+		"active": true,
+		"type": "block",
+		"mode": "normal",
+		"material": "ghost",
+		"angle": 90
+	},
+	{
+        "id": 525,
+        "textures": {
+            "door2": ["block-door2", "block-door2-a1", "block-door2-a2"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "door",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door3"
+    },
+	{
+        "id": 527,
+        "textures": {
+            "door2_key1": ["block-door2-key1", "block-door2-key1-a1", "block-door2-key1-a2"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "key1",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door-key1"
+    },
+	{
+        "id": 528,
+        "textures": {
+            "door2_key2": ["block-door2-key2", "block-door2-key2-a1", "block-door2-key2-a2"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "key2",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door-key2"
+    },
+	{
+        "id": 530,
+        "textures": {
+            "door3": ["block-door3"]
+        },
+        "active": true,
+        "type": "block",
+        "mode": "door",
+        "material": "fix",
+		"angle": 0,
+        "anim_switch": false,
+        "anim_function": null,
+        "anim_repeat": false,
+        "anim_repeatCount": 0,
+        "anim_repeatEnd": 3,
+        "anim_startFrame": 1,
+        "anim_actFrame": 1,
+        "anim_speed": 180,
+		"open_switch": false,
+		"open_positionValue": 0,
+        "sound": "door2"
+    },
+    {
+		"id": 535,
+		"textures": {
+			"block4": ["block4"]
+		},
+		"active": true,
+		"type": "block",
+		"mode": "normal",
+		"material": "fix",
+		"angle": 90
+	}
+]
