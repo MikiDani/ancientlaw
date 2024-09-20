@@ -601,10 +601,6 @@ export default class InputClass {
 					if (lowerCaseKey == '2') this.graphicsClass.changeWeapon(2);
 					if (lowerCaseKey == '3') this.graphicsClass.changeWeapon(3);
 					if (lowerCaseKey == '4') this.graphicsClass.changeWeapon(4);
-
-					if (lowerCaseKey == '8') this.menu.skySwitch = !this.menu.skySwitch;
-					if (lowerCaseKey == '9') this.menu.floorSwitch = !this.menu.floorSwitch;
-					if (lowerCaseKey == 'p') this.player.poisen = !this.player.poisen
 					if (lowerCaseKey == 'm') {					
 						if (!this.graphicsClass.cheat) {
 							if(this.player.map) {
@@ -812,22 +808,6 @@ export default class InputClass {
 				if (this.keyPressed['e'] || this.keyPressed['PageUp']) { this.player.move = true; this.player.angle += this.graphicsClass.toRadians(this.MOVE_ANGLE_SLOW); }
 				if (this.keyPressed['w']) { this.player.move = true; this.player.speed = this.player.speedModes.speedLevels[this.player.speedModes.actSpeedLevel] }
 				if (this.keyPressed['s']) { this.player.move = true; this.player.speed = -this.player.speedModes.speedLevels[this.player.speedModes.actSpeedLevel] }
-
-				if (this.keyPressed['o'] || this.keyPressed['O']) {
-					if (this.player.speedModes.speedLevels.length - 1 > this.player.speedModes.actSpeedLevel) {
-						this.player.speedModes.actSpeedLevel++;
-						$(`#val${this.player.speedModes.actSpeedLevel}`).addClass(`val${this.player.speedModes.actSpeedLevel}-on`)
-					}
-				}
-
-				if (this.keyPressed['p'] || this.keyPressed['P']) {
-					if (this.player.poison == false) {
-						this.player.poison = true;
-					} else {
-						this.player.poison = false;
-						this.graphicsClass.FOV = this.graphicsClass.toRadians(60)
-					}
-				}
 
 				if (this.keyPressed['ArrowUp']) { this.player.move = true; this.player.speed = this.player.speedModes.speedLevels[this.player.speedModes.actSpeedLevel] }
 				if (this.keyPressed['ArrowDown']) { this.player.move = true; this.player.speed = -this.player.speedModes.speedLevels[this.player.speedModes.actSpeedLevel] }
