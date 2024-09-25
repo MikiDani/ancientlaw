@@ -573,7 +573,7 @@ export default class GaphicsClass {
 								</a>
 							</div>
 						</div>
-						<div class="menu-info-text mb-2"><span class="title-width">Game Code:</span> <a href="https://github.com/MikiDani/acientlaw" target="_blank">https://github.com</a></div>
+						<div class="menu-info-text mb-2"><span class="title-width">Game Code:</span> <a href="https://github.com/MikiDani/ancientlaw" target="_blank">https://github.com</a></div>
 					</div>
 					`;
 					} else if (this.menu.optionsActive) {
