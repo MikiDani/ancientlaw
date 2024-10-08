@@ -15,7 +15,7 @@ export default class MapDataClass {
 		this.texturesClass = texturesClass
 		this.gamePlay = gamePlay
 		this.maps = ['level1', 'level2', 'level3', 'level4', 'level5', 'level6', 'level7', 'level8']
-		this.mapLevel = 5
+		this.mapLevel = 0
 		//--------------------------------
 		this.map = []
 		this.walls = []; this.walls[0] = null;
