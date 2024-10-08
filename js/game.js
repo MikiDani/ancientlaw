@@ -47,7 +47,7 @@ const player = {
 	shoting_anim_actFrame: 0,
 	shoting_anim_time: [0, 80, 50, 20, 105],
 	poison: false,
-	energy: 100,
+	energy: 10,
 	shotTime: 100,
 	map: false,
 	key1: false,

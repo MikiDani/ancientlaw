@@ -210,6 +210,7 @@ export default class InputClass {
 				this.graphicsClass.fullscreenSwitch = true	
 				this.fullScreen()
 			}
+			this.graphicsClass.checkPlayerObjects()
 		}
 
 		if (menuId == 'menu-editor') { 

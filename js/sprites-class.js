@@ -170,7 +170,7 @@ export default class SpritesClass {
 								this.player.poison = false
 								this.resetFov()
 								
-								let sign = (Math.floor(Math.random() * 2)) ? 0.3 : -0.3;
+								let sign = (Math.floor(Math.random() * 2)) ? 0.5 : -0.5;
 								this.player.die_action = setInterval(() => {
 									animCount++
 									if (animCount >= 10) {
@@ -178,8 +178,8 @@ export default class SpritesClass {
 										this.player.die_action = null
 									}
 									this.player.angle = this.player.angle + sign
-									this.player.z = this.player.z - 20
-								}, 50);
+									this.player.z = this.player.z - 12
+								}, 70);
 							}
 						}
 					} else {

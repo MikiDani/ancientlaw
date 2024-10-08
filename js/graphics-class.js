@@ -176,6 +176,11 @@ export default class GaphicsClass {
 		$("#gold-key").removeClass("gold-key-on")
 
 		$("#healt-percentage").html(this.player.energy + '%')
+
+		if (this.player.energy > 70) $("#healt-percentage").css('color', 'white');
+			else if (this.player.energy <= 70 && this.player.energy >=31) $("#healt-percentage").css('color', 'gold');
+			else if (this.player.energy <= 30) $("#healt-percentage").css('color', 'red');
+
 		if (this.player.adoptedWeapons.weapon2) $("#weapon2").addClass("weapon2-on")
 		if (this.player.adoptedWeapons.weapon3) $("#weapon3").addClass("weapon3-on")
 		if (this.player.adoptedWeapons.weapon4) $("#weapon4").addClass("weapon4-on")
@@ -623,7 +628,7 @@ export default class GaphicsClass {
 					<div id="menu-navigation" class="menu-element row">
 						<div class="menu-row col-2 bg-menu-selector d-flex justify-content-center align-items-center"><img src="./img/menu/star-selector.gif" style="display:none;"></div>
 						<div class="menu-row col d-flex justify-content-between align-items-center">
-							<span>navigations:</span>
+							<span>navigation bar:</span>
 							<select id="navigation-select" name="shadows" data-variablename="navigationSwitch" class="select-class ms-5 invisible-pointer">
 								<option value="0">Off</option>
 								<option value="1" ${navigationSelected}>On</option>
